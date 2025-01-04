@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" th:fragment="parent"
+<html lang="en" th:fragment="parent(content)"
 xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
@@ -10,6 +10,11 @@ xmlns:th="http://www.thymeleaf.org">
 
 </head>
 <body>
-    Base page content 
+    <!--main content-->
+    <section th:replace="${content}"></section>
+
+
+    <!--flowbite content-->
+
 </body>
 </html>
