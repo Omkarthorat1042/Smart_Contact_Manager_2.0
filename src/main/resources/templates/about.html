@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" th:replace="~{base :: parent(~{::#content})}">
-<head>
-
+<html lang="en" 
+    th:replace="~{base :: parent(~{::#content}, ~{::title}, ~{::script})}">
     
+<head>
+    <title>About page</title>
 </head>
 <body>
-
-<div id="content"></div>
-
-
-
-
-
-
-
-
-<h1>wlcome to about page</h1>
+    <section id="content">
+   
+    <h1>welcome to about page </h1>
+</section>
+<script>
+    console.log('about page')
+</script>
+<script>
+    console.log('second about  page')
+</script>
+    
 </body>
 </html>
